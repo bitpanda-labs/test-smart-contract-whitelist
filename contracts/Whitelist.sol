@@ -22,7 +22,6 @@ contract Whitelist {
         // Hints:
         // * You can modify the value for a key of a mapping by: `mapping[key] = new_value;`
         // * A whitelisted address has `true` as its value in the mapping.
-        whiteList[account] = true;
     }
 
     function removeAddress(address account) external {
@@ -30,7 +29,6 @@ contract Whitelist {
         // Hints:
         // * You can modify the value for a key of a mapping by: `mapping[key] = new_value;`
         // * A non-whitelisted address has `false` as its value in the mapping.
-        whiteList[account] = false;
     }
 
     function isWhitelisted(address account) external view returns (bool) {
@@ -38,6 +36,5 @@ contract Whitelist {
         // Hints:
         // * You can access the value for a key of a mapping by: `value = mapping[key]`
         // * You can return a value from a Solidity function using the `return` keyword
-        return whiteList[account];
     }
 }
